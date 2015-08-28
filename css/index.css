@@ -1,22 +1,22 @@
 body {
-    font: 13px/18px "Lucida Grande",verdana,sans-serif;
+    font: 13px/18px "Lucida Grande", verdana, sans-serif;
     background: #171d25;
     color: #fff;
     position: relative;
     overflow: hidden;
     height: 100%;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
 }
-
 .logo {
     width: 150px;
     position: absolute;
     left: 20%;
     top: 20%;
 }
-
 .logo span {
     -webkit-animation-name: flash-letter;
     -webkit-animation-iteration-count: infinite;
@@ -26,64 +26,50 @@ body {
     -webkit-animation-fill-mode: none;
     font-size: 18px;
 }
-
 .logo .E {
   -webkit-animation-delay: 0ms;
 }
-
 .logo .t {
   -webkit-animation-delay: 100ms;
 }
-
 .logo .e1 {
   -webkit-animation-delay: 200ms;
 }
-
 .logo .r1 {
   -webkit-animation-delay: 300ms;
 }
-
 .logo .p {
   -webkit-animation-delay: 400ms;
 }
-
 .logo .r2 {
   -webkit-animation-delay: 500ms;
 }
-
 .logo .i {
   -webkit-animation-delay: 600ms;
 }
-
 .logo .s {
   -webkit-animation-delay: 700ms;
 }
-
 .logo .e2 {
   -webkit-animation-delay: 800ms;
 }
-
 .wheel-tank {
     position: absolute;
-    top: 40%;
+    left: 50%;
+    top: 30%;
     width: 470px;
     height: 470px;
-    left: 45%;
 }
-
 .zero {
     background: url(../images/circle0.png) no-repeat center;
 }
-
 .one {
     background: url(../images/circle1.png) no-repeat center;
       -webkit-animation-direction: reverse;
 }
-
 .two {
     background: url(../images/circle2.png) no-repeat center;
 }
-
 .wheel {
     display: inline-block;
     position: absolute;
@@ -97,7 +83,6 @@ body {
     -webkit-animation-duration: 70s;
     -webkit-animation-name: spin;
 }
-
 @-webkit-keyframes spin {
     0%{
         -webkit-transform:rotateZ(0);
@@ -108,7 +93,6 @@ body {
         transform:rotateZ(360deg)
     }
 }
-
 @-webkit-keyframes flash-letter {
     0%{opacity:0.35}
     30%{opacity:0.8}
