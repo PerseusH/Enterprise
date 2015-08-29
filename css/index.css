@@ -27,31 +27,31 @@ body {
     font-size: 18px;
 }
 .logo .E {
-  -webkit-animation-delay: 0ms;
+    -webkit-animation-delay: 0ms;
 }
 .logo .t {
-  -webkit-animation-delay: 100ms;
+    -webkit-animation-delay: 100ms;
 }
 .logo .e1 {
-  -webkit-animation-delay: 200ms;
+    -webkit-animation-delay: 200ms;
 }
 .logo .r1 {
-  -webkit-animation-delay: 300ms;
+    -webkit-animation-delay: 300ms;
 }
 .logo .p {
-  -webkit-animation-delay: 400ms;
+    -webkit-animation-delay: 400ms;
 }
 .logo .r2 {
-  -webkit-animation-delay: 500ms;
+    -webkit-animation-delay: 500ms;
 }
 .logo .i {
-  -webkit-animation-delay: 600ms;
+    -webkit-animation-delay: 600ms;
 }
 .logo .s {
-  -webkit-animation-delay: 700ms;
+    -webkit-animation-delay: 700ms;
 }
 .logo .e2 {
-  -webkit-animation-delay: 800ms;
+    -webkit-animation-delay: 800ms;
 }
 .wheel-tank {
     position: absolute;
@@ -65,7 +65,7 @@ body {
 }
 .one {
     background: url(../images/circle1.png) no-repeat center;
-      -webkit-animation-direction: reverse;
+    -webkit-animation-direction: reverse;
 }
 .two {
     background: url(../images/circle2.png) no-repeat center;
@@ -84,18 +84,82 @@ body {
     -webkit-animation-name: spin;
 }
 @-webkit-keyframes spin {
-    0%{
-        -webkit-transform:rotateZ(0);
-        transform:rotateZ(0)
+    0% {
+        -webkit-transform: rotateZ(0);
+        transform: rotateZ(0)
     }
-    100%{
-        -webkit-transform:rotateZ(360deg);
-        transform:rotateZ(360deg)
+    100% {
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg)
     }
 }
 @-webkit-keyframes flash-letter {
-    0%{opacity:0.35}
-    30%{opacity:0.8}
-    40%{opacity:0.45}
-    100%{opacity:0.21}
+    0% {
+        opacity: 0.35
+    }
+    30% {
+        opacity: 0.8
+    }
+    40% {
+        opacity: 0.45
+    }
+    100% {
+        opacity: 0.21
+    }
+}
+.circle-tank {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    border: 10px solid rgb(23, 29, 37);
+}
+.circle-middle {
+    width: 28%;
+    height: 28%;
+    background-color: rgb(20, 191, 255);
+    left: 32%;
+    top: -5%;
+}
+.circle-left {
+    width: 16%;
+    height: 16%;
+    background: rgb(42, 51, 64);
+    bottom: 20%;
+    left: 6%;
+}
+.circle-right {
+    width: 16%;
+    height: 16%;
+    background: rgb(42, 51, 64);
+    bottom: 20%;
+    left: 75%;
+}
+.rotate {
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-delay: 700ms;
+    -webkit-animation-duration: 700ms;
+    -webkit-animation-name: circle-rotate;
+}
+@-webkit-keyframes circle-rotate {
+    0% {
+        transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+        -webkit-transform: rotate(120deg);
+    }
+    50% {
+        transform: rotate(240deg);
+        -ms-transform: rotate(240deg);
+        -webkit-transform: rotate(240deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
 }
